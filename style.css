@@ -176,9 +176,9 @@ button {
 }
 
 .categories__decor--top-right {
-  top: 814px;
-  bottom: 693px;
-  right: 72px;
+  top: 78px;
+  right: -110px;
+  width: 500px;
 }
 
 .categories__decor--left-mid {
