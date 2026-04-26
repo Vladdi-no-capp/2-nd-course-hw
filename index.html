@@ -14,19 +14,19 @@
   </head>
   <body>
     <header class="header">
-      <div class="hero__decor hero__decor--star hero__decor--star-top">
+      <div class="header__decor header__decor--star header__decor--star-top">
         <img src="img/Star 2.svg" alt="Звезда">
       </div>
-      <div class="hero__decor hero__decor--star hero__decor--star-left">
+      <div class="header__decor header__decor--star header__decor--star-left">
         <img src="img/Star 3.svg" alt="Звезда">
       </div>
-      <div class="hero__decor hero__decor--star hero__decor--star-right">
+      <div class="header__decor header__decor--star header__decor--star-right">
         <img src="img/Star 4.svg" alt="Звезда">
       </div>
-      <div class="hero__decor hero__decor--star hero__decor--star-small">
+      <div class="header__decor header__decor--star header__decor--star-small">
         <img src="img/Star 5.svg" alt="Звезда">
       </div>
-      <div class="hero__decor hero__decor--star hero__decor--star-group">
+      <div class="header__decor header__decor--star header__decor--star-group">
         <img src="img/Group 1597880565.svg" alt="Группа звезд">
       </div>
 
@@ -39,12 +39,12 @@
             <span class="hero__subtitle--text">приступай.</span>
           </p>
 
-          <button class="hero__button" type="button">Поехали!</button>
+          <a class="hero__button" href="#categories">Поехали!</a>
         </div>
       </section>
 
-      <div class="hero__words">
-        <div class="page hero__words-track">
+      <div class="header__words">
+        <div class="page header__words-track">
           <p>ВИКТОРИНА</p>
           <p>УГАДАЙ ЧИСЛО</p>
           <p>ПЕРЕВЕРНИ ТЕКСТ</p>
@@ -53,7 +53,7 @@
       </div>
     </header>
 
-    <section class="categories">
+    <section class="categories" id="categories">
 
       <div class="categories__decor categories__decor--top-big">
         <img src="img/Star 1.svg" alt="Звезда">
@@ -76,6 +76,7 @@
 
       <div class="page categories__grid">
         <div class="categories__column">
+          <a class="categories__card-link" href="#game1"> 
           <article class="categories__card categories__card--small">
             <div class="categories__preview">
               <img src="img/Обложка карточки.png" alt="Угадай число">
@@ -85,7 +86,8 @@
               <h3 class="categories__card-title">Угадай число</h3>
             </div>
           </article>
-
+          </a>
+          <a class="categories__card-link" href="#game5">
           <article class="categories__card categories__card--big">
             <div class="categories__preview">
               <img src="img/Обложка карточки3.png" alt="Камень, ножницы, бумага">
@@ -95,9 +97,11 @@
               <h3 class="categories__card-title">Камень, ножницы, бумага</h3>
             </div>
           </article>
+          </a>
         </div>
 
         <div class="categories__column">
+          <a class="categories__card-link" href="#game2">
           <article class="categories__card categories__card--big">
             <div class="categories__preview">
               <img src="img/Обложка карточки1.png" alt="Простая арифметика">
@@ -107,7 +111,8 @@
               <h3 class="categories__card-title">Простая арифметика</h3>
             </div>
           </article>
-
+          </a>
+          <a class="categories__card-link" href="#game4">
           <article class="categories__card categories__card--small">
             <div class="categories__preview">
               <img src="img/Обложка карточки4.png" alt="Простая викторина">
@@ -117,9 +122,11 @@
               <h3 class="categories__card-title">Простая викторина</h3>
             </div>
           </article>
+          </a>
         </div>
 
         <div class="categories__column">
+          <a class="categories__card-link" href="#game3">
           <article class="categories__card categories__card--small">
             <div class="categories__preview">
               <img src="img/Обложка карточки2.png" alt="Переверни текст">
@@ -129,7 +136,8 @@
               <h3 class="categories__card-title">Переверни текст</h3>
             </div>
           </article>
-
+          </a>
+          <a class="categories__card-link" href="#game6">
           <article class="categories__card categories__card--big">
             <div class="categories__preview">
               <img src="img/Обложка карточки5.png" alt="Генератор случайных цветов">
@@ -139,12 +147,13 @@
               <h3 class="categories__card-title">Генератор случайных цветов</h3>
             </div>
           </article>
+          </a>
         </div>
       </div>
     </section>
     
     
-    <section class="games__section">
+    <section class="games">
 
       <div class="games__decor games__decor--left-top">
         <img src="img/Star 6.svg" alt="Звезда">
@@ -166,7 +175,7 @@
 
       <div class="games__box page">
 
-          <article class="games__card games__card--right">
+          <article class="games__card games__card--right" id="game1">
             <div class="games__preview">
               <img src="img/Обложка карточки.png" alt="Угадай число">
             </div>
@@ -179,7 +188,7 @@
             </div>
           </article>
 
-          <article class="games__card">
+          <article class="games__card" id="game2">
             <div class="games__preview">
               <img src="img/Обложка карточки1.png" alt="Простая арифметика">
             </div>
@@ -192,7 +201,7 @@
             </div>
           </article>
       
-          <article class="games__card games__card--right">
+          <article class="games__card games__card--right" id="game3">
             <div class="games__preview">
               <img src="img/Обложка карточки2.png" alt="Простая арифметика">
             </div>
@@ -205,13 +214,13 @@
             </div>
           </article>
 
-          <article class="games__card">
+          <article class="games__card" id="game4">
             <div class="games__preview">
               <img src="img/Обложка карточки4.png" alt="Викторина">
             </div>
             <div class="games__content">
               <div class="games__action">  
-                <h2 class="games__content--title">Викторина</h2>
+                <h2 class="games__content--title"> Простая викторина</h2>
                 <h3 class="games__content--subtitle">Отвечай на вопросы викторины с вариантами ответов.</h3>
                 <button class="games__button" type="button">Играть</button>
               </div>
@@ -220,7 +229,7 @@
         
 
         
-          <article class="games__card games__card--right">
+          <article class="games__card games__card--right" id="game5">
             <div class="games__preview">
               <img src="img/Обложка карточки2.png" alt="Простая арифметика">
             </div>
@@ -233,7 +242,7 @@
             </div>
           </article>
 
-          <article class="games__card">
+          <article class="games__card" id="game6">
             <div class="games__preview">
               <img src="img/Обложка карточки5.png" alt="Генератор случайных цветов">
             </div>
