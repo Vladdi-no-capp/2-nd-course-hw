@@ -561,8 +561,20 @@ button {
     padding-bottom: 96px;
   }
 
+  .hero__title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .hero__subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+
   .hero__button {
     width: 100%;
+    min-height: 55px;
+    font-size: 16px;
   }
 
   .header__words-track {
@@ -574,6 +586,14 @@ button {
   .categories {
     padding-top: 64px;
     padding-bottom: 80px;
+  }
+
+  .categories__title {
+    font-size: 40px;
+  }
+
+  .categories__subtitle {
+    font-size: 16px;
   }
 
   .categories__decor--top-right {
@@ -592,8 +612,10 @@ button {
   }
 
   .games__decor--left-mid,
+  .games__decor--left-top,
   .games__decor--left-bottom,
   .games__decor--right-mid,
+  .games__decor--right-top,
   .games__decor--right-bottom {
     display: none;
   }
@@ -627,5 +649,75 @@ button {
 
   .categories__card-title {
     font-size: 28px;
+  }
+
+  .games {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .games__title-wrapper {
+    padding-bottom: 48px;
+  }
+
+  .games__title--text {
+    font-size: 40px;
+  }
+
+  .games__box {
+    gap: 24px;
+  }
+
+  .games__card,
+  .games__card--right {
+    flex-direction: column;
+    height: auto;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .games__preview {
+    width: 100%;
+    max-width: 100%;
+    height: 284px;
+  }
+
+  .games__preview img {
+    border-radius: 0;
+  }
+
+  .games__content {
+    padding: 29px;
+  }
+
+  .games__action {
+    max-width: none;
+    gap: 16px;
+  }
+
+  .games__content--title {
+    max-width: none;
+    font-size: 32px;
+  }
+
+  .games__content--subtitle {
+    max-width: none;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .games__button {
+    width: 100%;
+    min-height: 55px;
+    font-size: 16px;
+  }
+
+  .footer {
+    height: 100px;
+  }
+
+  .footer__text {
+    font-size: 16px;
   }
 }

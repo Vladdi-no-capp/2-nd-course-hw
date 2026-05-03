@@ -1,0 +1,213 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.task {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.task h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+
+.hover-focus {
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.hover-focus::before {
+    content: "◆ ";
+    color: #6a9bd8;
+    font-size: 0.9em;
+}
+
+.hover-focus::after {
+    content: " ◆";
+    color: #6a9bd8;
+    font-size: 0.9em;
+}
+
+.hover-focus:hover {
+    color: #c45c26;
+}
+
+.hover-focus:focus {
+    outline: 2px solid #6a9bd8;
+    outline-offset: 4px;
+    color: #1a5fb4;
+}
+
+
+.nth-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.nth-list li:nth-child(2n) {
+    color: #1a5fb4;
+    font-weight: 600;
+}
+
+.empty-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.empty-container .box {
+    padding: 1rem 1.5rem;
+    background: #e8e8e8;
+    border-radius: 6px;
+    min-width: 100px;
+}
+
+.empty-container .box:empty {
+    background: #ffd7a3;
+    border: 2px dashed #c45c26;
+}
+
+
+.marker-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.marker-list li:not(:first-child) {
+    color: #1a5fb4;
+}
+
+.marker-list li:not(:first-child)::marker {
+    color: #c45c26;
+}
+
+
+.transition-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    background: #6a9bd8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.transition-btn:hover {
+    background-color: #c45c26;
+}
+
+
+.transform-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.transform-box {
+    padding: 1rem 1.5rem;
+    background: #6a9bd8;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.rotate-box:hover {
+    transform: rotate(15deg);
+}
+
+.scale-box:hover {
+    transform: scale(1.2);
+}
+
+.translate-box:hover {
+    transform: translate(20px, -10px);
+}
+
+
+.animation-wrapper {
+    position: relative;
+    height: 60px;
+    background: #f0f0f0;
+    border-radius: 8px;
+}
+
+.animated-box {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #1a5fb4;
+    border-radius: 6px;
+    animation: move-right 2s ease-in-out infinite;
+}
+
+@keyframes move-right {
+    0%, 100% {
+        left: 20px;
+    }
+    50% {
+        left: 120px;
+    }
+}
+
+
+.task7-wrapper {
+    position: relative;
+    min-height: 180px;
+}
+
+.pos-static {
+    position: static;
+    padding: 0.75rem;
+    background: #e8e8e8;
+    margin-bottom: 0.5rem;
+}
+
+.pos-relative {
+    position: relative;
+    padding: 0.75rem;
+    background: #d4e4f7;
+    margin-bottom: 0.5rem;
+    min-height: 60px;
+}
+
+.pos-absolute {
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    background: #c45c26;
+    color: white;
+    z-index: 3;
+    border-radius: 4px;
+}
+
+.pos-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    background: #1a5fb4;
+    color: white;
+    z-index: 2;
+    border-radius: 4px;
+}
