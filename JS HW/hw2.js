@@ -17,7 +17,6 @@ if (c > 0 && c < 10) {
   console.log('Неверно');
 }
 
-
 // Задание 3
 let d = 45;
 let e = 120;
@@ -37,7 +36,7 @@ alert(Number(a) + Number(b));
 // Задание 5
 let monthNumber = 12;
 
-if (monthNumber > 13) {
+if (monthNumber < 1 || monthNumber > 12) {
   console.log('Номер месяца указан неверно');
 } else {
   switch (monthNumber) {
@@ -61,7 +60,5 @@ if (monthNumber > 13) {
     case 11:
       console.log('Осень');
       break;
-    default:
-      console.log('Номер месяца указан неверно');
   }
 }
