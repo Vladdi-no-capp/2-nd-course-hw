@@ -1,7 +1,7 @@
 function simpleArithmeticGame() {
     const firstNumber = Math.floor(Math.random() * 10) + 1;
     const secondNumber = Math.floor(Math.random() * 10) + 1;
-    const operations = ['+', '-', '*'];
+    const operations = ['+', '-', '*', '/'];
     const operation = operations[Math.floor(Math.random() * operations.length)];
     let correctAnswer;
 
@@ -9,11 +9,19 @@ function simpleArithmeticGame() {
         correctAnswer = firstNumber + secondNumber;
     } else if (operation === '-') {
         correctAnswer = firstNumber - secondNumber;
-    } else {
+    } else if (operation === '*') {
         correctAnswer = firstNumber * secondNumber;
+    } else {
+        correctAnswer = Math.round(firstNumber / secondNumber);
     }
 
-    const userAnswer = Number(prompt(`${firstNumber} ${operation} ${secondNumber} = ?`));
+    const userInput = prompt(`${firstNumber} ${operation} ${secondNumber} = ?`);
+    const userAnswer = Number(userInput);
+
+    if (userInput === null || userInput.trim() === '' || Number.isNaN(userAnswer)) {
+        alert('Ответ должен быть числом');
+        return;
+    }
 
     if (userAnswer === correctAnswer) {
         alert('Правильно!');
@@ -80,6 +88,8 @@ function guessArrayNumber() {
 }
 
 // Задание 8
+guessArrayNumber();
+
 const task8String = 'abcdef';
 console.log(task8String.split('').reverse().join(''));
 
