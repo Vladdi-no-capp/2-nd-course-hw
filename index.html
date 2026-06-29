@@ -14,20 +14,23 @@
   </head>
   <body>
     <header class="header">
-      <div class="hero__decor hero__decor--star hero__decor--star-top">
+      <div class="header__decor header__decor--star header__decor--star-top">
         <img src="img/Star 2.svg" alt="Звезда">
       </div>
-      <div class="hero__decor hero__decor--star hero__decor--star-left">
+      <div class="header__decor header__decor--star header__decor--star-left">
         <img src="img/Star 3.svg" alt="Звезда">
       </div>
-      <div class="hero__decor hero__decor--star hero__decor--star-right">
+      <div class="header__decor header__decor--star header__decor--star-right">
         <img src="img/Star 4.svg" alt="Звезда">
       </div>
-      <div class="hero__decor hero__decor--star hero__decor--star-small">
+      <div class="header__decor header__decor--star header__decor--star-small">
         <img src="img/Star 5.svg" alt="Звезда">
       </div>
-      <div class="hero__decor hero__decor--star hero__decor--star-group">
+      <div class="header__decor header__decor--star header__decor--star-group">
         <img src="img/Group 1597880565.svg" alt="Группа звезд">
+      </div>
+      <div class="header__decor header__decor--star header__decor--star-group-mobile">
+        <img src="img/Vector (3).svg" alt="Группа звезд">
       </div>
 
       <section class="hero page">
@@ -39,37 +42,30 @@
             <span class="hero__subtitle--text">приступай.</span>
           </p>
 
-          <button class="hero__button" type="button">Поехали!</button>
+          <a class="hero__button" href="#games">Поехали!</a>
         </div>
       </section>
 
-      <div class="hero__words">
-        <div class="page hero__words-track">
+      <div class="header__words">
+        <div class="page header__words-track">
           <p>ВИКТОРИНА</p>
           <p>УГАДАЙ ЧИСЛО</p>
           <p>ПЕРЕВЕРНИ ТЕКСТ</p>
           <p>ПРОСТАЯ АРИФМЕТИКА</p>
+          <p aria-hidden="true">ВИКТОРИНА</p>
+          <p aria-hidden="true">УГАДАЙ ЧИСЛО</p>
+          <p aria-hidden="true">ПЕРЕВЕРНИ ТЕКСТ</p>
+          <p aria-hidden="true">ПРОСТАЯ АРИФМЕТИКА</p>
         </div>
       </div>
     </header>
 
-    <section class="categories">
+    <section class="categories" id="categories">
 
-      <div class="categories__decor categories__decor--top-right">
+      <div class="categories__decor categories__decor--top-big">
         <img src="img/Star 1.svg" alt="Звезда">
       </div>
-      <div class="categories__decor categories__decor--left-mid">
-        <img src="img/Star 6.svg" alt="Звезда">
-      </div>
-      <div class="categories__decor categories__decor--left-bottom">
-        <img src="img/Star 7.svg" alt="Звезда">
-      </div>
-      <div class="categories__decor categories__decor--right-mid">
-        <img src="img/Star 8.svg" alt="Звезда">
-      </div>
-      <div class="categories__decor categories__decor--right-bottom">
-        <img src="img/Star 10.svg" alt="Группа звезд">
-      </div>
+      
       <div class="categories__decor categories__decor--top-left">
         <img src="img/Star 11.svg" alt="Звезда">
       </div>
@@ -87,6 +83,7 @@
 
       <div class="page categories__grid">
         <div class="categories__column">
+          <a class="categories__card-link" href="#game1"> 
           <article class="categories__card categories__card--small">
             <div class="categories__preview">
               <img src="img/Обложка карточки.png" alt="Угадай число">
@@ -96,7 +93,8 @@
               <h3 class="categories__card-title">Угадай число</h3>
             </div>
           </article>
-
+          </a>
+          <a class="categories__card-link" href="#game5">
           <article class="categories__card categories__card--big">
             <div class="categories__preview">
               <img src="img/Обложка карточки3.png" alt="Камень, ножницы, бумага">
@@ -106,9 +104,11 @@
               <h3 class="categories__card-title">Камень, ножницы, бумага</h3>
             </div>
           </article>
+          </a>
         </div>
 
         <div class="categories__column">
+          <a class="categories__card-link" href="#game2">
           <article class="categories__card categories__card--big">
             <div class="categories__preview">
               <img src="img/Обложка карточки1.png" alt="Простая арифметика">
@@ -118,7 +118,8 @@
               <h3 class="categories__card-title">Простая арифметика</h3>
             </div>
           </article>
-
+          </a>
+          <a class="categories__card-link" href="#game4">
           <article class="categories__card categories__card--small">
             <div class="categories__preview">
               <img src="img/Обложка карточки4.png" alt="Простая викторина">
@@ -128,9 +129,11 @@
               <h3 class="categories__card-title">Простая викторина</h3>
             </div>
           </article>
+          </a>
         </div>
 
         <div class="categories__column">
+          <a class="categories__card-link" href="#game3">
           <article class="categories__card categories__card--small">
             <div class="categories__preview">
               <img src="img/Обложка карточки2.png" alt="Переверни текст">
@@ -140,7 +143,8 @@
               <h3 class="categories__card-title">Переверни текст</h3>
             </div>
           </article>
-
+          </a>
+          <a class="categories__card-link" href="#game6">
           <article class="categories__card categories__card--big">
             <div class="categories__preview">
               <img src="img/Обложка карточки5.png" alt="Генератор случайных цветов">
@@ -150,20 +154,35 @@
               <h3 class="categories__card-title">Генератор случайных цветов</h3>
             </div>
           </article>
+          </a>
         </div>
       </div>
     </section>
     
     
-    <section class="games__section page">
+    <section class="games" id="games">
+
+      <div class="games__decor games__decor--left-top">
+        <img src="img/Star 6.svg" alt="Звезда">
+      </div>
+      <div class="games__decor games__decor--right-top">
+        <img src="img/Star 7.svg" alt="Звезда">
+      </div>
+      <div class="games__decor games__decor--left-bottom">
+        <img src="img/Star 8.svg" alt="Звезда">
+      </div>
+      <div class="games__decor games__decor--right-bottom">
+        <img src="img/Star 10.svg" alt="Группа звезд">
+
+      </div>
 
       <div class="games__title-wrapper page">
         <h2 class="games__title--text">Мини-игры</h2>
       </div>
 
       <div class="games__box page">
-        
-          <article class="games__card games__card--right">
+
+          <article class="games__card games__card--right" id="game1">
             <div class="games__preview">
               <img src="img/Обложка карточки.png" alt="Угадай число">
             </div>
@@ -171,12 +190,12 @@
               <div class="games__action">  
                 <h2 class="games__content--title">Угадай число</h2>
                 <h3 class="games__content--subtitle">Попробуй угадать случайное число от 1 до 100.</h3>
-                <button class="games__button" type="button">Играть</button>
+                <button class="games__button" type="button" onclick="guessNumberGame()">Играть</button>
               </div>
             </div>
           </article>
 
-        <article class="games__card">
+          <article class="games__card" id="game2">
             <div class="games__preview">
               <img src="img/Обложка карточки1.png" alt="Простая арифметика">
             </div>
@@ -184,14 +203,12 @@
               <div class="games__action">  
                 <h2 class="games__content--title">Простая арифметика</h2>
                 <h3 class="games__content--subtitle">Попробуй решить простые арифметические задачи.</h3>
-                <button class="games__button" type="button">Играть</button>
+                <button class="games__button" type="button" onclick="simpleArithmeticGame()">Играть</button>
               </div>
             </div>
           </article>
-        
-
-        
-          <article class="games__card games__card--right">
+      
+          <article class="games__card games__card--right" id="game3">
             <div class="games__preview">
               <img src="img/Обложка карточки2.png" alt="Простая арифметика">
             </div>
@@ -204,22 +221,22 @@
             </div>
           </article>
 
-    <article class="games__card">
+          <article class="games__card" id="game4">
             <div class="games__preview">
               <img src="img/Обложка карточки4.png" alt="Викторина">
             </div>
             <div class="games__content">
               <div class="games__action">  
-                <h2 class="games__content--title">Викторина</h2>
+                <h2 class="games__content--title"> Простая викторина</h2>
                 <h3 class="games__content--subtitle">Отвечай на вопросы викторины с вариантами ответов.</h3>
-                <button class="games__button" type="button">Играть</button>
+                <a class="games__button" href="JS HW/hw5.html">Играть</a>
               </div>
             </div>
           </article>
         
 
         
-          <article class="games__card games__card--right">
+          <article class="games__card games__card--right" id="game5">
             <div class="games__preview">
               <img src="img/Обложка карточки2.png" alt="Простая арифметика">
             </div>
@@ -232,7 +249,7 @@
             </div>
           </article>
 
-          <article class="games__card">
+          <article class="games__card" id="game6">
             <div class="games__preview">
               <img src="img/Обложка карточки5.png" alt="Генератор случайных цветов">
             </div>
@@ -244,10 +261,13 @@
               </div>
             </div>
           </article>
-
+        </div>
     </section>
+
     <footer class="footer">
       <p class="footer__text">Все права защищены.</p>
     </footer>
+    <script src="JS HW/hw4.js"></script>
+    <script src="JS HW/hw5.js"></script>
   </body>
 </html>
