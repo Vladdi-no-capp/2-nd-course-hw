@@ -87,9 +87,43 @@ function guessArrayNumber() {
     }
 }
 
-// Задание 8
-guessArrayNumber();
+function startQuiz() {
+    const quiz = [
+        {
+            question: 'Какая планета самая близкая к Солнцу?',
+            options: ['Венера', 'Меркурий', 'Марс'],
+            correctIndex: 1,
+        },
+        {
+            question: 'Сколько дней в високосном году?',
+            options: ['365', '366', '364'],
+            correctIndex: 1,
+        },
+        {
+            question: 'Какой язык программирования используется для веб-страниц?',
+            options: ['Python', 'JavaScript', 'C++'],
+            correctIndex: 1,
+        },
+    ];
 
+    let correctAnswers = 0;
+
+    quiz.forEach((item, index) => {
+        const answer = prompt(
+            `Вопрос ${index + 1}: ${item.question}\n1) ${item.options[0]}\n2) ${item.options[1]}\n3) ${item.options[2]}\nВведите номер ответа (1-3)`
+        );
+
+        const selectedIndex = Number(answer) - 1;
+
+        if (selectedIndex === item.correctIndex) {
+            correctAnswers += 1;
+        }
+    });
+
+    alert(`Вы правильно ответили на ${correctAnswers} из ${quiz.length} вопросов.`);
+}
+
+// Задание 8
 const task8String = 'abcdef';
 console.log(task8String.split('').reverse().join(''));
 
